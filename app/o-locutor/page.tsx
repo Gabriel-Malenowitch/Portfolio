@@ -1,6 +1,7 @@
-import { Text, HStack, Heading, Link, VStack, Flex, Box, GridItem, Grid } from "@chakra-ui/react";
+import { Text, HStack, Heading, Link, VStack, Highlight, GridItem, Grid } from "@chakra-ui/react";
 
 import profileImage from '../../public/profile-image.png'
+import MicNoneIcon from '@mui/icons-material/MicNone';
 import Image from "next/image";
 
 export default function Home() {
@@ -9,8 +10,13 @@ export default function Home() {
       <section style={{maxWidth: 1000}}>
         <header>
           <HStack  justifyContent="space-between" style={{padding: "32px 16px"}}>
-            <Heading as="h6">
-              Locufólio
+            <Heading as="h6" alignItems="center" display="flex">
+              <HStack gap={4}>
+                <MicNoneIcon fontSize="large" /> 
+                <Text>
+                  Portifólio
+                </Text>
+              </HStack>
             </Heading>
             <HStack>
               <Link href="#home" fontWeight="bold">
@@ -31,7 +37,7 @@ export default function Home() {
               <GridItem>
                 <VStack alignItems="start">
                   <Text>
-                    Olá, meu nome é Fanciley Leitão!! E eu sou <Text fontWeight={600} as="span">Locutor</Text>!
+                    Olá, meu nome é Fanciley Leitão!! E eu sou <Text fontWeight="bold" as="span">Locutor</Text>!
                   </Text>
                   <br />
                   <Text>
