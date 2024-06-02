@@ -1,6 +1,6 @@
 import { Text, HStack, Heading, Link, VStack, Highlight, GridItem, Grid } from "@chakra-ui/react";
 
-import profileImage from '../../public/profile-image.png'
+import profileImage from '../../public/profile-image.jpg'
 import MicNoneIcon from '@mui/icons-material/MicNone';
 import Image from "next/image";
 
