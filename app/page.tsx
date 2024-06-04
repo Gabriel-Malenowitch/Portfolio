@@ -34,7 +34,7 @@ export default function Home() {
                 <Text> ~ Gabriel B. Malenowitch</Text>
               </HStack>
             </VStack>
-            <Heading as="h6" alignItems="center" display="flex" pl={2}>
+            <Heading as="h6" alignItems="center" display="flex" pl={4}>
               <Text>Contatos</Text>
             </Heading>
             <br />
