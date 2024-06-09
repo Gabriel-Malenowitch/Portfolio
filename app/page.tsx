@@ -1,4 +1,4 @@
-import { Text, HStack, Heading, VStack, GridItem, Grid, Link, Button, UnorderedList, ListItem, Code } from "@chakra-ui/react";
+import { Text, HStack, Heading, VStack, GridItem, Grid, Link, Button, UnorderedList, ListItem, Code, Box } from "@chakra-ui/react";
 
 import HeadphonesIcon from '@mui/icons-material/Headphones';
 import { ThreeJsModel } from "./threejs-model";
@@ -7,19 +7,26 @@ import { DownloadCurriculumButton } from "./download-curriculum-buttom";
 export default function Home() {
   
   return (
-      <section style={{maxWidth: 1000, padding: 32}}>
+      <Box style={{maxWidth: 1000, padding: 32}} fontSize={{ base: "0.8em", sm: "1em" }}>
         <header>
-          <HStack flexDirection={{ base: "column", xs: "row" }}  justifyContent="space-between" style={{padding: "32px 16px"}}>
-            <Heading as="h6" alignItems="center" display="flex">
-              <HStack gap={4}>
-                <Text>
-                  Portifólio
-                </Text>
-                <HeadphonesIcon fontSize="large" /> 
-              </HStack>
-            </Heading>
-            <DownloadCurriculumButton />
-          </HStack>
+          <Box 
+            display="flex" 
+            flexDirection={{ base: "column", sm: "row" }}
+            justifyContent="space-between"
+            alignItems="center"
+            gap={4}
+            pb={4}
+            >
+              <Heading alignItems="center" display="flex">
+                <HStack gap={4}>
+                  <Text>
+                    Portifólio
+                  </Text>
+                  <HeadphonesIcon fontSize="large" /> 
+                </HStack>
+              </Heading>
+              <DownloadCurriculumButton />
+          </Box>
         </header>
         <main>
           <section id="home">
@@ -35,9 +42,16 @@ export default function Home() {
                 <Text> ~ Gabriel B. Malenowitch</Text>
               </HStack>
             </VStack>
-            <Heading as="h6" alignItems="center" display="flex" pl={4}>
-              <Text>Contatos</Text>
-            </Heading>
+            <Box 
+              display="flex" 
+              flexDirection={{ base: "column", sm: "row" }}
+              justifyContent="space-between"
+              alignItems="center"
+              >
+                <Heading>
+                  <Text>Contatos</Text>
+                </Heading>
+            </Box>
             <br />
             <Grid gridTemplateColumns="1fr 1fr">
               <GridItem>
@@ -70,6 +84,6 @@ export default function Home() {
             </Grid>
           </section>
         </main>
-      </section>
+      </Box>
   );
 }
