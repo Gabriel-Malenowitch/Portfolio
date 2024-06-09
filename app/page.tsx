@@ -44,6 +44,7 @@ export default function Home() {
             </VStack>
             <Box 
               display="flex" 
+              py={4}
               flexDirection={{ base: "column", sm: "row" }}
               justifyContent="space-between"
               alignItems="center"
