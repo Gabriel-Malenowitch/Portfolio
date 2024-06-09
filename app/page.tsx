@@ -7,9 +7,9 @@ import { DownloadCurriculumButton } from "./download-curriculum-buttom";
 export default function Home() {
   
   return (
-      <section style={{maxWidth: 1000}}>
+      <section style={{maxWidth: 1000, padding: 32}}>
         <header>
-          <HStack  justifyContent="space-between" style={{padding: "32px 16px"}}>
+          <HStack flexDirection={{ base: "column", xs: "row" }}  justifyContent="space-between" style={{padding: "32px 16px"}}>
             <Heading as="h6" alignItems="center" display="flex">
               <HStack gap={4}>
                 <Text>
@@ -18,12 +18,12 @@ export default function Home() {
                 <HeadphonesIcon fontSize="large" /> 
               </HStack>
             </Heading>
-              <DownloadCurriculumButton />
+            <DownloadCurriculumButton />
           </HStack>
         </header>
         <main>
           <section id="home">
-            <VStack alignItems="start" fontSize="1.5rem">
+            <VStack alignItems="start">
               <Text>
                 {'"'}Nas linhas de código, descubro um portal para a imaginação, onde problemas se transformam em desafios emocionantes e cada bug é uma oportunidade para aprender. Meu código é minha voz, minha maneira de comunicar ideias e moldar a realidade. Como um artista com seu pincel, mergulho nas profundezas da minha lógica, criando obras-primas digitais que transcendem o tempo e o espaço.
               </Text>
@@ -39,24 +39,24 @@ export default function Home() {
               <Text>Contatos</Text>
             </Heading>
             <br />
-            <Grid gridTemplateColumns="1fr 1fr" fontSize="1.5rem">
+            <Grid gridTemplateColumns="1fr 1fr">
               <GridItem>
               <UnorderedList>
                 <ListItem>
-                  <Code fontSize="1.5rem">
+                  <Code>
                     gabrielbotelhomalenowitch@gmail.com
                   </Code>
                 </ListItem>
                 <ListItem>
                   <Link href="https://github.com/gabriel-malenowitch" target="_blank">
-                    <Code fontSize="1.5rem">
+                    <Code>
                       Github
                     </Code>
                   </Link>
                 </ListItem>
                 <ListItem>
                   <Link href="https://www.linkedin.com/in/gabriel-botelho-malenowitch-9a0523214/" target="_blank">
-                    <Code fontSize="1.5rem">
+                    <Code>
                       Linkedin
                     </Code>
                   </Link>
