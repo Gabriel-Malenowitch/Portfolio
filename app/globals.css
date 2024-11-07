@@ -1,10 +1,56 @@
 /* @tailwind base; */
-@tailwind components; 
-@tailwind utilities;
+/* @tailwind components; 
+@tailwind utilities; */
+
+@import url('https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&display=swap');
+
+/* #title {  
+  font-family: "Hepta Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+#head {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 48px;
+}
 
 body {
-  /* scroll-behavior: smooth; */
+  background-color: #444 !important;
+  color: whitesmoke !important;
 }
+
+.crazyRotation {
+  animation: crazyRotation 2s  reverse infinite;
+  width: 30px;
+}
+
+@keyframes crazyRotation {
+  0% {
+    transform: rotateX(0deg) rotateZ(0deg) rotateY(0deg);
+    /* border-radius: 70px; */
+  }
+  100% {
+    transform: rotateX(360deg) rotateZ(360deg) rotateY(180deg);
+    /* border-radius: 200px; */
+  }
+}
+
+@media (max-width: 768px) {
+  #footer {
+    align-items: center !important;
+  }
+
+  #head {
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+
+/* Hey! My name is Jonathan Seibt, and I'm an Engineering Manager. */
 
   /* @layer base {
     :root {

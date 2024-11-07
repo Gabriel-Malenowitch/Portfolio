@@ -1,6 +1,6 @@
 'use client'
 
-import { ReactElement, useRef } from 'react';
+import { ReactElement } from 'react';
 import { Button, useToast } from '@chakra-ui/react'
 import { saveAs } from 'file-saver'
 import DownloadRoundedIcon from '@mui/icons-material/DownloadRounded';
@@ -14,14 +14,14 @@ export const DownloadCurriculumButton = (): ReactElement => {
             const encodedData = await fetch(`/api/curriculum`)
             const data = await encodedData.blob()
 
-            saveAs(data, 'Curriculo - Gabriel Botelho Malenowitch.pdf')
+            saveAs(data, 'Full-stack curriculum - Gabriel Botelho Malenowitch.pdf')
             window.open(URL.createObjectURL(data));
         } catch (error) {
             console.error(error)
 
             const toastId = toast({ 
-                description: 'Tivemos um problema ao baixar o documento.',
-                status: 'error'
+                description: 'We have a problem 😔. Try again latter! (please 💚)',
+                status: 'error',
             })
             
             setTimeout(() => toast.close(toastId), 2000)
@@ -30,8 +30,12 @@ export const DownloadCurriculumButton = (): ReactElement => {
     }
     
     return (
-        <Button onClick={handleSave} colorScheme="green">
-            Baixar currículo <DownloadRoundedIcon/>
+        <Button onClick={handleSave} colorScheme="cyan" variant="outline" style={{ 
+            borderRadius: '64px',
+            width: '48px',
+            height: '48px',
+        }}>
+            <DownloadRoundedIcon/>
         </Button>
     )
 }
