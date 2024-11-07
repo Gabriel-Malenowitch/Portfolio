@@ -17,16 +17,16 @@ export default function Home() {
         <main>
           <section>
             <VStack alignItems="start" gap={6} >
-              <Text fontSize='2rem' fontWeight="bold">
-                Hi!! My name is Gabriel B. Malenowitch, and I'm a Full-stack Engineering Developer. <div className="crazyRotation">👋</div>
+              <Text fontSize="2rem" fontWeight="bold">
+                Hi!! My name is Gabriel B. Malenowitch, and {"I'm"} a Full-stack Engineering Developer. <div className="crazyRotation">👋</div>
               </Text>
-              <Text fontSize='0.9em' fontWeight="light">
-                From 2003 january, i am a guy who loves logic and solving problems with it. I also love going to the gym, and I enjoy drawing a bit too, but let's focus on coding! 😄
+              <Text fontSize="0.9em" fontWeight="light">
+                From 2003 january, i am a guy who loves logic and solving problems with it. I also love going to the gym, and I enjoy drawing a bit too, but {"let's"} focus on coding! 😄
               </Text>
-              <Text fontSize='1.25em'>
+              <Text fontSize="1.25em">
                 My journey started when I was 16 years old, when I discovered Python and programming logic - it blew my mind. The power to turn ideas into reality exists and can be achieved with programming.
               </Text>
-              <Text fontSize='1.25em'>
+              <Text fontSize="1.25em">
                 After that experience, I focused a huge part of my energy on programming, initially just as a hobby. Once I finished high school, I started to professionalize myself to become an outstanding programmer, and that’s the journey I’m still on today. I hope my passion and dedication can be useful to you!
               </Text>
             </VStack>
