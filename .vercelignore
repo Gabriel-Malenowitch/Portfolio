@@ -1,0 +1,8 @@
+.github
+.npmrc
+tsconfig.tsbuildinfo
+.husky
+.vscode
+files
+LICENSE
+README.md

@@ -1,0 +1,31 @@
+{
+  "trailingComma": "all",
+  "tabWidth": 2,
+  "semi": false,
+  "singleQuote": true,
+  "printWidth": 120,
+  "bracketSameLine": true,
+  "jsxSingleQuote": true,
+  "proseWrap": "always",
+  "endOfLine": "auto",
+  "overrides": [
+    {
+      "files": [
+        "*.json",
+        ".prettierrc"
+      ],
+      "options": {
+        "trailingComma": "none",
+        "printWidth": 0
+      }
+    },
+    {
+      "files": [
+        "*.md"
+      ],
+      "options": {
+        "printWidth": 99999
+      }
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+files
+LICENSE
+pnpm-lock.yaml
+.next
+node_modules
+tsconfig.tsbuildinfo
